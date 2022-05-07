@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-values
+  namespace: default
+data:  
+  values.yaml: |-
+    replication: true
+    replicas: 2
+    serviceType: NodePort
